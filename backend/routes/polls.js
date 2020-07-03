@@ -3,10 +3,10 @@ var Pusher = require('pusher');
 
 const router = express.Router()
 var pusher = new Pusher({
-    appId : "1029738",
-    key : "ae4e4ae9c1f3e842a401",
-    secret : "68e01218a30464d5dcca",
-    cluster : "ap2",
+    appId : "API_ID",
+    key : "API_KEY",
+    secret : "SECRET_KEY",
+    cluster : "CLUSTER",
 });
 
 router.route('/').post((req, res, next) => {
