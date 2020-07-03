@@ -54,8 +54,8 @@ export default class Poll extends Component {
 
     componentDidMount = () => {
         _this = this
-        var pusher = new Pusher('ae4e4ae9c1f3e842a401', {
-            cluster: 'ap2',
+        var pusher = new Pusher('API_KEY', {
+            cluster: 'CLUSTER_ID',
           });
           var channel = pusher.subscribe('timer')
           channel.bind('start', function(data) {
